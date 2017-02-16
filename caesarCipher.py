@@ -10,11 +10,12 @@ key = 13
 # Mode of the program: encrypt/decrypt
 mode = 'encrypt'
 # Symbols that can be encrypted
-letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+letters = '!"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]\
+    ^_`a bcdefghijklmnopqrstuvwxyz{|}~'
 # Store encrypted/decrypted form of the message
 translated = ''
 # Capitalize the string in a message
-message = message.upper()
+#message = message.upper()
 
 # Run the encryption/decryption code on each symbol in the message string
 for symbol in message:
