@@ -16,7 +16,7 @@ def loadDictionary():
 english_words = loadDictionary()
 
 
-def getEnglishCount():
+def getEnglishCount(message):
     message = message.upper()
     message = removeNonLetters(message)
     possibleWords = message.split()
@@ -27,7 +27,7 @@ def getEnglishCount():
     for word in possibleWords:
         if word in english_words:
             matches += 1
-    return float(matches) / len(possibleWord)
+    return float(matches) / len(possibleWords)
 
 
 def removeNonLetters(message):
